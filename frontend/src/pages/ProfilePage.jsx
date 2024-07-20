@@ -19,7 +19,7 @@ function ProfilePage() {
     useEffect(() => {
         setName(userInfo.name)
         setEmail(userInfo.email)
-    }, [userInfo.setName, userInfo.email])
+    }, [userInfo.name, userInfo.email])
 
     async function submitHandler(e) {
         e.preventDefault()
