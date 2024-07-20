@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import Loader from '../components/Loader'
 import { setCredentials } from '../slices/authSlice'
@@ -8,7 +7,6 @@ import { useUpdateUserMutation } from '../slices/usersApiSlice'
 
 function ProfilePage() {
     const dispatch = useDispatch()
-    const navigate = useNavigate()
 
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
