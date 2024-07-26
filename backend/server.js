@@ -27,6 +27,7 @@ if (process.env.NODE_ENV === "production") {
 } else {
   app.get("/", (req, res) => res.send("Server is Ready"));
 }
+
 app.use(notFound);
 app.use(errorHandler);
 app.listen(port, () => console.log(`Server running on port: ${port}`));
